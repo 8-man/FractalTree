@@ -27,8 +27,13 @@ public void drawBranches(int x,int y, double branchLength, double angle)
   
   if(branchLength > smallestBranch)
   {
-    drawBranches(endX1, endY1, branchLength, angle - Math.random()*4 - 2);
-    drawBranches(endX1, endY2, branchLength, angle - Math.random()*4 - 2);
+    drawBranches(endX1, endY1, branchLength, angle1 - Math.random()*4-2);
+    drawBranches(endX2, endY2, branchLength, angle2 - Math.random()*4-2);
   }
   
 } 
+public void mousePressed()
+{
+  redraw();
+  
+}
